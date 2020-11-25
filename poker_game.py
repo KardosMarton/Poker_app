@@ -5,6 +5,13 @@ import poker_backend as pb
 import os
 
 ROUND_COUNTER = 1
+#   Default cards value:
+FLOP_CARD_ONE_DEFAULT_TEXT = "FLOP 1"
+FLOP_CARD_TWO_DEFAULT_TEXT = "FLOP 2"
+FLOP_CARD_THREE_DEFAULT_TEXT = "FLOP 3"
+TURN_CARD_DEFAULT_TEXT = "TURN"
+RIVER_CARD_DEFAULT_TEXT = "RIVER"
+
 
 root = tk.Tk()
 root.title('Poker Game')
@@ -51,28 +58,28 @@ card_two_player_two.place(x=12, y=215)
 # Add 3 label/button for the 3 cards of flop
 flop_card_one = tk.Button(root,
                           width=15,
-                          text="FLOP 1")
+                          text=FLOP_CARD_ONE_DEFAULT_TEXT)
 flop_card_one.place(x=270, y=80)
 
 flop_card_two = tk.Button(root,
                           width=15,
-                          text="FLOP 2")
+                          text=FLOP_CARD_TWO_DEFAULT_TEXT)
 flop_card_two.place(x=270, y=120)
 
 flop_card_three = tk.Button(root,
                             width=15,
-                            text="FLOP 3")
+                            text=FLOP_CARD_THREE_DEFAULT_TEXT)
 flop_card_three.place(x=270, y=160)
 
 turn_card = tk.Button(root,
                       width=15,
-                      text="TURN")
+                      text=TURN_CARD_DEFAULT_TEXT)
 turn_card.place(x=270, y=220)
 
 
 river_card = tk.Button(root,
                        width=15,
-                       text="RIVER")
+                       text=RIVER_CARD_DEFAULT_TEXT)
 river_card.place(x=270, y=260)
 
 
@@ -98,7 +105,7 @@ get_cards = tk.Button(root,
 get_cards.place(x=270, y=20)
 
 def new_round():
-
+    card_one_player_one.config()
 
 
 root.mainloop()
