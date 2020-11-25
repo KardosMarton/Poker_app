@@ -47,6 +47,14 @@ for i in range(1, 52):
 print(cards_ordered_list)
 
 
+def mix_cards():
+    global cards_ordered_list, NR
+    cards_ordered_list = []
+    NR = 0
+    for y in range(1, 52):
+        add_random_to_list(cards_ordered_list)
+
+
 def get_next_card():
     global NR
     print("NR={}, cards_ordered_list[{}]={}".format(NR, NR, cards_ordered_list[NR]))
