@@ -4,8 +4,9 @@ import tkinter as tk
 import poker_backend as pb
 import os
 
+# Globals
 ROUND_COUNTER = 1
-#   Default cards value:
+#   Default cards global value:
 FLOP_CARD_ONE_DEFAULT_TEXT = "FLOP 1"
 FLOP_CARD_TWO_DEFAULT_TEXT = "FLOP 2"
 FLOP_CARD_THREE_DEFAULT_TEXT = "FLOP 3"
@@ -136,3 +137,6 @@ btn_next_round = tk.Button(root,
 btn_next_round.place(x=270, y=300)
 
 root.mainloop()
+
+# TODO: Replace btn_next_round button
+# TODO: Refactor, refactor, refactor
