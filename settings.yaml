@@ -1,0 +1,14 @@
+player_one:
+  name_label_x_positiion: 20
+  name_label_y_position: 20
+  card_one_x_position: 12
+  card_one_y_position: 40
+  card_two_x_position: 12
+  card_two_y_position: 75
+player_two:
+  name_label_x_positiion: 20
+  name_label_y_position: 160
+  card_one_x_position: 12
+  card_one_y_position: 180
+  card_two_x_position: 12
+  card_two_y_position: 215
