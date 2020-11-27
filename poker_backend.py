@@ -4,7 +4,6 @@ import yaml
 import random
 
 
-CARDS = {}
 NR = 0
 
 
@@ -14,8 +13,6 @@ def read_yaml(yaml_file):
 
 
 CARDS = read_yaml("cards.yaml")
-
-# print(CARDS)
 
 
 def choose_one_from_cards():
@@ -30,16 +27,6 @@ def add_random_to_list(number_list):
         add_random_to_list(number_list)
 
 
-# for i in range(1, 52):
-#     try:
-#         card = choose_one_from_cards()
-#         if card is None:
-#             card = choose_one_from_cards()
-#         else:
-#             print("Card nr {}: {}".format(i, card))
-#     except KeyError:
-#         pass
-
 cards_ordered_list = []
 for i in range(1, 52):
     add_random_to_list(cards_ordered_list)
@@ -53,6 +40,7 @@ def mix_cards():
     NR = 0
     for y in range(1, 52):
         add_random_to_list(cards_ordered_list)
+    print(cards_ordered_list)
 
 
 def get_next_card():
@@ -67,19 +55,3 @@ def card_text_format(card_dictionary_value):
     return "{} of {} {}".format(card_dictionary_value["number"],
                                 card_dictionary_value["color"],
                                 card_dictionary_value["form"])
-
-
-def get_next_round_cards():
-    pass
-
-
-def reveal_flop():
-    burn_next_card()
-    pass
-
-
-# print("Print all the cards in a deck in a random order:")
-# for i in cards_ordered_list:
-#     nr += 1
-#     print("Card nr: {} \nCard: {}\n\n".format(nr, CARDS.pop(i)))
-
