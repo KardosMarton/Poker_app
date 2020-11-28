@@ -3,258 +3,310 @@
     form: clubs
     number: two
     value: 2
+    image_path: "pictures/black_clubs_2.png"
 2:
     color: black
     form: clubs
     number: three
     value: 3
+    image_path: "pictures/black_clubs_3.png"
 3:
     color: black
     form: clubs
     number: four
     value: 4
+    image_path: "pictures/black_clubs_4.png"
 4:
     color: black
     form: clubs
     number: five
     value: 5
+    image_path: "pictures/black_clubs_5.png"
 5:
     color: black
     form: clubs
     number: six
     value: 6
+    image_path: "pictures/black_clubs_6.png"
 6:
     color: black
     form: clubs
     number: seven
     value: 7
+    image_path: "pictures/black_clubs_7.png"
 7:
     color: black
     form: clubs
     number: eight
     value: 8
+    image_path: "pictures/black_clubs_8.png"
 8:
     color: black
     form: clubs
     number: nine
     value: 9
+    image_path: "pictures/black_clubs_9.png"
 9:
     color: black
     form: clubs
     number: ten
     value: 10
+    image_path: "pictures/black_clubs_10.png"
 10:
     color: black
     form: clubs
     number: Jumbo
     value: 11
+    image_path: "pictures/black_clubs_J.png"
 11:
     color: black
     form: clubs
     number: Queen
     value: 12
+    image_path: "pictures/black_clubs_Q.png"
 12:
     color: black
     form: clubs
     number: King
     value: 13
+    image_path: "pictures/black_clubs_K.png"
 13:
     color: black
     form: clubs
     number: Ace
     value: 14
+    image_path: "pictures/black_clubs_A.png"
 14:
     color: black
     form: spades
     number: two
     value: 2
+    image_path: "pictures/black_spades_2.png"
 15:
     color: black
     form: spades
     number: three
     value: 3
+    image_path: "pictures/black_spades_3.png"
 16:
     color: black
     form: spades
     number: four
     value: 4
+    image_path: "pictures/black_spades_4.png"
 17:
     color: black
     form: spades
     number: five
     value: 5
+    image_path: "pictures/black_spades_5.png"
 18:
     color: black
     form: spades
     number: six
     value: 6
+    image_path: "pictures/black_spades_6.png"
 19:
     color: black
     form: spades
     number: seven
     value: 7
+    image_path: "pictures/black_spades_7.png"
 20:
     color: black
     form: spades
     number: eight
     value: 8
+    image_path: "pictures/black_spades_8.png"
 21:
     color: black
     form: spades
     number: nine
     value: 9
+    image_path: "pictures/black_spades_9.png"
 22:
     color: black
     form: spades
     number: ten
     value: 10
+    image_path: "pictures/black_spades_10.png"
 23:
     color: black
     form: spades
     number: Jumbo
     value: 11
+    image_path: "pictures/black_spades_J.png"
 24:
     color: black
     form: spades
     number: Queen
     value: 12
+    image_path: "pictures/black_spades_Q.png"
 25:
     color: black
     form: spades
     number: King
     value: 13
+    image_path: "pictures/black_spades_K.png"
 26:
     color: black
     form: spades
     number: Ace
     value: 14
+    image_path: "pictures/black_spades_A.png"
 27:
     color: red
     form: diamonds
     number: two
     value: 2
+    image_path: "pictures/red_diamonds_2.png"
 28:
     color: red
     form: diamonds
     number: three
     value: 3
+    image_path: "pictures/red_diamonds_3.png"
 29:
     color: red
     form: diamonds
     number: four
     value: 4
+    image_path: "pictures/red_diamonds_4.png"
 30:
     color: red
     form: diamonds
     number: five
     value: 5
+    image_path: "pictures/red_diamonds_5.png"
 31:
     color: red
     form: diamonds
     number: six
     value: 6
+    image_path: "pictures/red_diamonds_6.png"
 32:
     color: red
     form: diamonds
     number: seven
     value: 7
+    image_path: "pictures/red_diamonds_7.png"
 33:
     color: red
     form: diamonds
     number: eight
     value: 8
+    image_path: "pictures/red_diamonds_8.png"
 34:
     color: red
     form: diamonds
     number: nine
     value: 9
+    image_path: "pictures/red_diamonds_9.png"
 35:
     color: red
     form: diamonds
     number: ten
     value: 10
+    image_path: "pictures/red_diamonds_10.png"
 36:
     color: red
     form: diamonds
     number: Jumbo
     value: 11
+    image_path: "pictures/red_diamonds_J.png"
 37:
     color: red
     form: diamonds
     number: Queen
     value: 12
+    image_path: "pictures/red_diamonds_Q.png"
 38:
     color: red
     form: diamonds
     number: King
     value: 13
+    image_path: "pictures/red_diamonds_K.png"
 39:
     color: red
     form: diamonds
     number: Ace
     value: 14
+    image_path: "pictures/red_diamonds_A.png"
 40:
     color: red
     form: hearts
     number: two
     value: 2
+    image_path: "pictures/red_hearts_2.png"
 41:
     color: red
     form: hearts
     number: three
     value: 3
+    image_path: "pictures/red_hearts_3.png"
 42:
     color: red
     form: hearts
     number: four
     value: 4
+    image_path: "pictures/red_hearts_4.png"
 43:
     color: red
     form: hearts
     number: five
     value: 5
+    image_path: "pictures/red_hearts_5.png"
 44:
     color: red
     form: hearts
     number: six
     value: 6
+    image_path: "pictures/red_hearts_6.png"
 45:
     color: red
     form: hearts
     number: seven
     value: 7
+    image_path: "pictures/red_hearts_7.png"
 46:
     color: red
     form: hearts
     number: eight
     value: 8
+    image_path: "pictures/red_hearts_8.png"
 47:
     color: red
     form: hearts
     number: nine
     value: 9
+    image_path: "pictures/red_hearts_9.png"
 48:
     color: red
     form: hearts
     number: ten
     value: 10
+    image_path: "pictures/red_hearts_10.png"
 49:
     color: red
     form: hearts
     number: Jumbo
     value: 11
+    image_path: "pictures/red_hearts_J.png"
 50:
     color: red
     form: hearts
     number: Queen
     value: 12
+    image_path: "pictures/red_hearts_Q.png"
 51:
     color: red
     form: hearts
     number: King
     value: 13
+    image_path: "pictures/red_hearts_K.png"
 52:
     color: red
     form: hearts
     number: Ace
     value: 14
+    image_path: "pictures/red_hearts_A.png"

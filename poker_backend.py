@@ -14,6 +14,22 @@ def read_yaml(yaml_file):
 
 CARDS = read_yaml("cards.yaml")
 
+print(CARDS)
+
+
+def do_all_the_pictures_exist():
+    existing_picture_number = 0
+    for z in range(1, 52):
+        if os.path.isfile(pb.CARDS[i]["image_path"]):
+            print("{} is an existing file: Picture exist!".format(pb.CARDS[i]["image_path"]))
+            existing_picture_number = existing_picture_number + 1
+        else:
+            print("{} does not an existing file: Picture does not exist!".format(pb.CARDS[i]["image_path"]))
+    if existing_picture_number == 52:
+        print("All the needed pictures exist in the given directory: pictures/")
+    else:
+        print("Something went wrong!!! Double check the pictures directory for the missing pictures!!!")
+
 
 def choose_one_from_cards():
     return CARDS.pop(random.randint(1, 52))

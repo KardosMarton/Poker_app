@@ -22,10 +22,19 @@ canvas = tk.Canvas(root, height=400, width=800, bg="blue")
 canvas.pack()
 
 
+# Test image as background
+# filename = tk.PhotoImage(file="pictures/small_club_2.png")
+# lbl_test_image = tk.Label(root, image=filename)
+# lbl_test_image.place(x=12, y=40)
+# Test image as background
+
 lbl_player_one_name = tk.Label(root, text="Juduka").place(x=20, y=20)
+image_card_one_player_one = tk.PhotoImage(file="pictures/small_club_2.png")
+# TODO: Create function:  get_selected_card_picture
 btn_card_one_player_one = tk.Button(root,
-                                    width=CARD_WIDTH,
+                                    # width=CARD_WIDTH,
                                     text=pb.card_text_format(pb.get_next_card()),
+                                    image=image_card_one_player_one,
                                     bg="black")
 
 btn_card_one_player_one.place(x=12, y=40)
