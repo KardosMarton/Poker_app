@@ -29,36 +29,48 @@ canvas.pack()
 # Test image as background
 
 lbl_player_one_name = tk.Label(root, text="Juduka").place(x=20, y=20)
-image_card_one_player_one = tk.PhotoImage(file="pictures/small_club_2.png")
 # TODO: Create function:  get_selected_card_picture
+image_card_one_player_one = tk.PhotoImage(file="{}".format(pb.get_card_image(pb.get_next_card())))
 btn_card_one_player_one = tk.Button(root,
                                     # width=CARD_WIDTH,
-                                    text=pb.card_text_format(pb.get_next_card()),
+                                    # text=pb.card_text_format(pb.get_next_card()),
                                     image=image_card_one_player_one,
-                                    bg="black")
+                                    # bg="black"
+                                    )
 
 btn_card_one_player_one.place(x=12, y=40)
 
+image_card_two_player_one = tk.PhotoImage(file="{}".format(pb.get_card_image(pb.get_next_card())))
 card_two_player_one = tk.Button(root,
-                                width=CARD_WIDTH,
-                                text=pb.card_text_format(pb.get_next_card()),
-                                bg="black")
-card_two_player_one.place(x=12, y=75)
+                                # width=CARD_WIDTH,
+                                # text=pb.card_text_format(pb.get_next_card()),
+                                image=image_card_two_player_one
+                                # bg="black"
+                                )
+card_two_player_one.place(x=95, y=40)
+
 
 lbl_player_two_name = tk.Label(root, text="Marcika").place(x=20, y=160)
+image_card_one_player_two = tk.PhotoImage(file="{}".format(pb.get_card_image(pb.get_next_card())))
 btn_card_one_player_two = tk.Button(root,
-                                    width=CARD_WIDTH,
-                                    text=pb.card_text_format(pb.get_next_card()),
-                                    bg="black")
+                                    # width=CARD_WIDTH,
+                                    # text=pb.card_text_format(pb.get_next_card()),
+                                    image=image_card_one_player_two
+                                    # bg="black"
+                                    )
 btn_card_one_player_two.place(x=12, y=180)
 
+image_card_two_player_two = tk.PhotoImage(file="{}".format(pb.get_card_image(pb.get_next_card())))
 btn_card_two_player_two = tk.Button(root,
-                                    width=CARD_WIDTH,
-                                    text=pb.card_text_format(pb.get_next_card()),
-                                    bg="black")
-btn_card_two_player_two.place(x=12, y=215)
+                                    # width=CARD_WIDTH,
+                                    # text=pb.card_text_format(pb.get_next_card()),
+                                    image=image_card_two_player_two
+                                    # bg="black"
+                                    )
+btn_card_two_player_two.place(x=95, y=180)
 
 
+# TODO: Add default empty card  picture and set it to flop, turn and river cards.
 # Flop cards
 btn_flop_card_one = tk.Button(root,
                               width=CARD_WIDTH,

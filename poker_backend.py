@@ -71,3 +71,7 @@ def card_text_format(card_dictionary_value):
     return "{} of {} {}".format(card_dictionary_value["number"],
                                 card_dictionary_value["color"],
                                 card_dictionary_value["form"])
+
+
+def get_card_image(card_dictionary_value):
+    return "{}".format(card_dictionary_value["image_path"])
