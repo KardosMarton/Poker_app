@@ -18,7 +18,7 @@ CARD_WIDTH = 17
 
 root = tk.Tk()
 root.title('Poker Game')
-canvas = tk.Canvas(root, height=400, width=800, bg="blue")
+canvas = tk.Canvas(root, height=400, width=800, bg="#006442")
 canvas.pack()
 
 IMAGE_BACK_CARD = tk.PhotoImage(file="pictures/back_card.png")
@@ -29,44 +29,37 @@ IMAGE_BACK_CARD = tk.PhotoImage(file="pictures/back_card.png")
 # lbl_test_image.place(x=12, y=40)
 # Test image as background
 
-lbl_player_one_name = tk.Label(root, text="Juduka").place(x=20, y=20)
+# Player one label
+lbl_player_one_name = tk.Label(root,
+                               text=pb.DEFAULT_SETTINGS["player_one"]["default_name"])
+lbl_player_one_name.place(x=pb.DEFAULT_SETTINGS["player_one"]["name_label_x_position"],
+                          y=pb.DEFAULT_SETTINGS["player_one"]["name_label_y_position"])
 # TODO: Create function:  get_selected_card_picture
 image_card_one_player_one = tk.PhotoImage(file="{}".format(pb.get_card_image(pb.get_next_card())))
 btn_card_one_player_one = tk.Button(root,
-                                    # width=CARD_WIDTH,
-                                    # text=pb.card_text_format(pb.get_next_card()),
-                                    image=image_card_one_player_one,
-                                    # bg="black"
-                                    )
-
-btn_card_one_player_one.place(x=12, y=40)
+                                    image=image_card_one_player_one)
+# btn_card_one_player_one.place(x=12, y=40)
+btn_card_one_player_one.place(x=pb.DEFAULT_SETTINGS["player_one"]["card_one_x_position"],
+                              y=pb.DEFAULT_SETTINGS["player_one"]["card_one_y_position"])
 
 image_card_two_player_one = tk.PhotoImage(file="{}".format(pb.get_card_image(pb.get_next_card())))
 btn_card_two_player_one = tk.Button(root,
-                                    # width=CARD_WIDTH,
-                                    # text=pb.card_text_format(pb.get_next_card()),
-                                    image=image_card_two_player_one
-                                    # bg="black"
-                                    )
-btn_card_two_player_one.place(x=95, y=40)
+                                    image=image_card_two_player_one)
+# btn_card_two_player_one.place(x=95, y=40)
+btn_card_two_player_one.place(x=pb.DEFAULT_SETTINGS["player_one"]["card_two_x_position"],
+                              y=pb.DEFAULT_SETTINGS["player_one"]["card_two_y_position"])
 
 
-lbl_player_two_name = tk.Label(root, text="Marcika").place(x=20, y=160)
+lbl_player_two_name = tk.Label(root, text=pb.DEFAULT_SETTINGS["player_two"]["default_name"]).place(x=20, y=160)
 image_card_one_player_two = tk.PhotoImage(file="{}".format(pb.get_card_image(pb.get_next_card())))
 btn_card_one_player_two = tk.Button(root,
-                                    # width=CARD_WIDTH,
-                                    # text=pb.card_text_format(pb.get_next_card()),
                                     image=image_card_one_player_two
-                                    # bg="black"
                                     )
 btn_card_one_player_two.place(x=12, y=180)
 
 image_card_two_player_two = tk.PhotoImage(file="{}".format(pb.get_card_image(pb.get_next_card())))
 btn_card_two_player_two = tk.Button(root,
-                                    # width=CARD_WIDTH,
-                                    # text=pb.card_text_format(pb.get_next_card()),
                                     image=image_card_two_player_two
-                                    # bg="black"
                                     )
 btn_card_two_player_two.place(x=95, y=180)
 

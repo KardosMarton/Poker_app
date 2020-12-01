@@ -16,6 +16,10 @@ CARDS = read_yaml("cards.yaml")
 
 print(CARDS)
 
+DEFAULT_SETTINGS = read_yaml("settings.yaml")
+
+print(DEFAULT_SETTINGS)
+
 
 def do_all_the_pictures_exist():
     existing_picture_number = 0
